@@ -8,6 +8,7 @@ using(var db = new ShopContext()){
 
     var user = db.Users.Where(x => x.Name == "Mert").FirstOrDefault();
 
+    System.Console.WriteLine("User:");
     System.Console.WriteLine(user.Id);
     System.Console.WriteLine(user.Name);
 
